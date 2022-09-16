@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1.5em;
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratings-state,
+.thank-you-state {
+  background-image: linear-gradient(hsl(215, 20%, 17%), hsl(215, 27%, 12%));
+  padding: 1.5em;
+  border-radius: 16px;
+  max-width: 411px;
+}
+
+.thank-you-state {
+  text-align: center;
+  padding: 2.5em 2.25em 2em 2.25em !important;
+}
+
+.ratings-state img {
+  background-color: hsl(213, 19%, 18%);
+  padding: 0.75em;
+  border-radius: 50%;
+  margin-bottom: 0.9em;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.45px;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 14px;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+.thank-you-state article p:first-child {
+  color:hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 24px;
+  padding: 0.5em 1em 0.25em 1em;
+  display: inline-block;
+}
+
+.thank-you-state img {
+  margin-bottom: 1.5em;
+}
+
+.radio-container {
+  margin-bottom: 1.25em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-container input[type="radio"] {
+  display: none;
+}
+
+.radio-container label {
+  font-size: 14px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-container label:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.radio-container label:has([type="radio"]:checked) {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+button {
+  font-size: 14px;
+  width: 100%;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  padding: 0.9em;
+  border-radius: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-family: "Overpass", sans-serif;
+}
+
+.thank-you-state {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  button:hover {
+    cursor: pointer;
+    background-color: white;
+    color:hsl(25, 97%, 53%);
+  }
+
+  .ratings-state {
+    border-radius: 30px;
+    padding: 2em 2.4em 2em 2em;
+  }
+
+  .thank-you-state {
+    border-radius: 30px;
+  }
+
+  .ratings-state img {
+    padding: 1em;
+    margin-bottom: 1.6em;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p,
+  button {
+    font-size: 15px;
+  }
+
+  .radio-container label {
+    font-size: 16px;
+    font-weight: 700;
+    width: 51px;
+    height: 51px;
+  }
+
+  .radio-container {
+    margin-bottom: 1.7em;
+  }
+}
