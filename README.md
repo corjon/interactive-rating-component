@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontEnd Mentor](https://www.frontendmentor.io/solutions/ratings-component-using-radio-buttons-DhBPwfcYDL)
+- Live Site URL: [GitHub Pages](https://corjon.github.io/interactive-rating-component/)
 
 ## My process
 
